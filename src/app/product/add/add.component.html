@@ -1,0 +1,15 @@
+<h1 class="text-center">Add New Product</h1>
+<form [formGroup]="addForm" action="" class="w-50 container text-center">
+    <input formControlName="pid" id="p1" type="text" class="form-control mt-3" placeholder="product id" name="in1">
+    <input formControlName="pname" id="p2" type="text" class="form-control mt-3" placeholder="name" name="in2">
+    <input formControlName="catId" id="p3" type="text" class="form-control mt-3" placeholder="category id" name="in3">
+    <input formControlName="desc" id="p4" type="text" class="form-control mt-3" placeholder="description" name="in4">
+    <input formControlName="price" id="p5" type="text" class="form-control mt-3" placeholder="price" name="in5">
+    <input formControlName="is_available" id="p6" type="text" class="form-control mt-3" placeholder="is_available" name="in6">
+    <input formControlName="productImg" id="p7" type="text" class="form-control mt-3" placeholder="product Image" name="in7">
+    <input formControlName="rating" id="p8" type="text" class="form-control mt-3" placeholder="rating" name="in8">
+    <input formControlName="review" id="p9" type="text" class="form-control mt-3" placeholder="review" name="in9">
+    <input formControlName="vendorName" id="p10" type="text" class="form-control mt-3" placeholder="vendor name" name="in10">
+    <input formControlName="warranty" id="p11" type="text" class="form-control mt-3" placeholder="warranty" name="in11">
+    <button (click)="add()" type="submit" class="btn btn-success m-3">Add Product</button>
+</form>

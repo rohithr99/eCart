@@ -1,0 +1,37 @@
+<h1 class="text-center">Edit a Product</h1>
+<form (ngSubmit)="editProduct()" action="" class="w-50 container">
+    <label for="">Product Name</label>
+    <input [(ngModel)]="pdata.productName" id="p2" type="text" class="form-control mt-3" placeholder="name" name="in2">
+
+    <label class="mt-3" for="">category id</label>
+    <input [(ngModel)]="pdata.category" id="p3" type="text" class="form-control mt-3" placeholder="category id"
+        name="in3">
+    <label class="mt-3" for="">description</label>
+    <input [(ngModel)]="pdata.description" id="p4" type="text" class="form-control mt-3" placeholder="description"
+        name="in4">
+
+    <label class="mt-3" for="">price</label>
+    <input [(ngModel)]="pdata.price" id="p5" type="text" class="form-control mt-3" placeholder="price" name="in5">
+
+    <label class="mt-3" for="">is avilable</label>
+    <input [(ngModel)]="pdata.is_available" id="p6" type="text" class="form-control mt-3" placeholder="is_available"
+        name="in6">
+
+    <label class="mt-3" for="">product image</label>
+    <input [(ngModel)]="pdata.productImage" id="p7" type="text" class="form-control mt-3" placeholder="product Image"
+        name="in7">
+
+    <label class="mt-3" for="">rating</label>
+    <input [(ngModel)]="pdata.rating" id="p8" type="text" class="form-control mt-3" placeholder="rating" name="in8">
+
+    <label class="mt-3" for="">review</label>
+    <input [(ngModel)]="pdata.review" id="p9" type="text" class="form-control mt-3" placeholder="review" name="in9">
+
+    <label class="mt-3" for="">vendor name</label>
+    <input [(ngModel)]="pdata.vendorName" id="p10" type="text" class="form-control mt-3" placeholder="vendor name"
+        name="in10">
+    <label class="mt-3" for="">warranty</label>
+    <input [(ngModel)]="pdata.warranty" id="p11" type="text" class="form-control mt-3" placeholder="warranty"
+        name="in11">
+    <div class="text-center"><button type="submit" class="btn btn-success m-3">Edit Product</button></div>
+</form>
